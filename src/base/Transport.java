@@ -1,6 +1,6 @@
 package base;
 
-public abstract class Transport {
+public abstract class Transport implements Transfer {
     private Engine engine;
     private String name;
     protected int price;

@@ -1,6 +1,6 @@
 package base;
 
-public class FlyTransport extends Transport {
+public class FlyTransport extends Transport{
 
     Gun gun;
 
@@ -27,5 +27,10 @@ public class FlyTransport extends Transport {
     @Override
     public void drive() {
         System.out.println("пилот управляет самолетом");
+    }
+
+    @Override
+    public void transfer() {
+        System.out.println("Самолет может перевезти 400 пасажиров");
     }
 }

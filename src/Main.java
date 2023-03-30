@@ -16,10 +16,30 @@ public class Main {
 
         plane.go();
         plane.drive();
+        plane.transfer();
+
 
         AutoTransport auto = new AutoTransport();
         auto.go();
         auto.drive();
+        auto.transfer();
+
+        AutoTransport.testStaticMethod();
+
+        Transfer.testStatic();
+
+
+        Transfer[] transports = new Transfer[2];
+
+        transports[0] = plane;
+        transports[1] = auto;
+
+        for (int i = 0; i < transports.length; i++) {
+            transports[i].transfer();
+        }
+
+
+
 
 
 
