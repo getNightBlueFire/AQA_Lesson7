@@ -23,4 +23,9 @@ public class FlyTransport extends Transport {
         s += gun.toString();
         return s;
     }
+
+    @Override
+    public void drive() {
+        System.out.println("пилот управляет самолетом");
+    }
 }

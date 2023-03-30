@@ -12,25 +12,18 @@ public class Main {
         wheels[5] = new Wheel("hankook", 20);
         Engine engine = new Engine();
 
-        Transport tesla = new Transport("VIJIEJRIEA1231245", wheels , engine);
-
-
-
-
-        Transport transport = new Transport();
-
-        transport.go();
-
         FlyTransport plane = new FlyTransport();
 
         plane.go();
-
-        System.out.println(transport);
-        System.out.println(plane);
-
+        plane.drive();
 
         AutoTransport auto = new AutoTransport();
         auto.go();
+        auto.drive();
+
+
+
+
 
 
 

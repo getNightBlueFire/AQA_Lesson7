@@ -1,6 +1,6 @@
 package base;
 
-public class Transport {
+public abstract class Transport {
     private Engine engine;
     private String name;
     protected int price;
@@ -33,5 +33,8 @@ public class Transport {
     public void go(){
         System.out.println("transport goes away");
     }
+
+    public abstract void drive();
+
 
 }

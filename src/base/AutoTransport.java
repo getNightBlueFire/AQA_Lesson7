@@ -6,6 +6,11 @@ public final class AutoTransport extends Transport {
 
     }
 
+    @Override
+    public void drive() {
+        System.out.println("водитель управляет машиной");
+    }
+
     public AutoTransport(String name, Wheel[] wheels, Engine engine) {
         super(name, wheels, engine);
     }
