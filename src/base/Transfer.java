@@ -1,6 +1,8 @@
 package base;
 
 public interface Transfer {
+    int TEST = 141;
+
     void transfer();
 
     default void test(){

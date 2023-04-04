@@ -36,5 +36,8 @@ public abstract class Transport implements Transfer {
 
     public abstract void drive();
 
+    public Wheel[] getWheels() {
+        return wheels;
+    }
 
 }

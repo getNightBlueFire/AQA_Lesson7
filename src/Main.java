@@ -10,6 +10,8 @@ public class Main {
         wheels[3] = new Wheel("continental", 20);
         wheels[4] = new Wheel("hankook", 20);
         wheels[5] = new Wheel("hankook", 20);
+
+
         Engine engine = new Engine();
 
         FlyTransport plane = new FlyTransport();
@@ -38,10 +40,32 @@ public class Main {
             transports[i].transfer();
         }
 
+        CosmosTransport cosmosTransport = new CosmosTransport();
+        WaterTransport waterTransport = new WaterTransport();
+
+        info(cosmosTransport);
+        info(waterTransport);
 
 
 
 
+        int i = poly1(3, 4);
+        System.out.println(i);
+        int i1 = poly1(3, 4, 5);
+        System.out.println(i1);
+
+
+        Day day = new Day();
+        day.day = Days.Mo;
+
+        String name = day.day.name;
+        System.out.println(name);
+
+
+
+        switch (day.day){
+            case Mo -> System.out.println();
+        }
 
 
 
@@ -51,4 +75,28 @@ public class Main {
 
 
     }
+
+
+     public static void info(Move move){
+         Test test = Test.valueOf(move.move() + "");
+         switch (test){
+           case A1 -> move.move();
+           case A2 -> move.move();
+
+        }
+        move.move();
+        move.transfer();
+     }
+
+     public static int poly1(int a, int b){
+        return a + b;
+     }
+
+    public static int poly1(int a, int b, int c){
+        return a + b + c;
+    }
+
+
+
+
 }
